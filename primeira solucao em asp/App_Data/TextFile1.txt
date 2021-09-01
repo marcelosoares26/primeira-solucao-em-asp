@@ -1,0 +1,17 @@
+﻿// nome do banco Database1.mdf
+
+CREATE TABLE [dbo].[profissional] (
+    [Id]      INT        IDENTITY (1, 1) NOT NULL,
+    [nomeCompleto]    VARCHAR(100) NULL,
+    [telefone] NCHAR (13) NULL,
+    [rg] NCHAR(7) NULL, 
+    [enderecoCompleto] VARCHAR(150) NULL, 
+    [salario] MONEY NULL, 
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+insert into profissional values ('Marcela fernandes', '123224', '23123', 'sdadasdsad', '10000' ); 
+insert into profissional values ('Eduardo rodrigues', '123224', '23123', 'sdadasdsad', '990' ); 
+insert into profissional values ('Raianeda silva', '123224', '23123', 'sdadasdsad', '300' ); 
+insert into profissional values ('Julio teste da silva', '123224', '23123', 'sdadasdsad', '15000' ); 
+insert into profissional values ('Julia fernandes da silva', '123224', '23123', 'sdadasdsad', '3000' ); 
